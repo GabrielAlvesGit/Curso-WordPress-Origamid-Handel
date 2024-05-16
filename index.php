@@ -117,6 +117,7 @@
    }
 
    // Negação
+   /*
    if(!empty($categorias));
     echo "Está cheiodo";
    endif;
@@ -127,7 +128,8 @@
    } else {
     echo "Não está vazia";
    }
-
+   */
+  
    // Para cada Item -> Camiseta Preta e Bermuda Branca
    foreach($produtos as $produto){ ?>
    <h1><?= $produto['nome'] ?></h1>
@@ -135,6 +137,8 @@
    <?php } ?>
 </pre>
 
+
+  <!-- ================== Funções ================== --->
   <?php 
 ?>
   // Ternário - Condicional de uma linha
@@ -143,6 +147,56 @@
     $mensagem = $preco > 100 ? "Caro" : "Barato";
     echo $mensagem;
    ?>
+
+
+  <?php 
+  function somar($a, $b){
+    return $a + $b;
+  }
+
+  echo somar(10, 15);
+?>
+
+  <?php 
+  function formulario_contato(){ ?>
+  <form>
+    <input type="text" name="" id="">
+    <input type="button" value="Enviar">
+  </form>
+  <?php } ?>
+
+  <!--< ?php formulario_contato(); ?>-->
+  <?php $teste = get_search_form(['eco' => false, 'aria_label' => 'MEU FORMULARIO']); ?>
+  <?php echo $teste; ?>
+
+
+  <!-- ================== 0204 Classes e Objetos ================== -->
+  <?php 
+  class Produto {
+    public $preco = 14900;
+
+    public function nome(){
+      return 'Camisa Preta';
+    }
+    
+    public function preco_final() {
+      return 'R$ ' . $this->preco / 100;
+    }
+  }
+
+  $camisa = new Produto;
+  // print_r($camisa); -> Produto Object ( [preco] => 14900 )
+  var_dump($camisa);
+  ?>
+
+  <?php 
+  
+  $query = new WP_Query ([
+    'post_type' => 'page'
+  ]);
+  
+  print_r($query);
+  ?>
 </body>
 
 </html>
