@@ -195,8 +195,42 @@
     'post_type' => 'page'
   ]);
   
-  print_r($query);
+  print_r($query ->post);
   ?>
+
+  <?php 
+  function puxarPaginas() {
+    return new WP_Query([
+      'post_type' => 'product',
+    ]);
+  }
+
+  $query = puxarPaginas();
+  ?>
+
+  <!-- Chamando todas as páginas -->
+  <?php foreach($query->posts as $post) { ?>
+  <h1><?= $post->post_title; ?></h1>
+  <?php } ?>
+
+  <!-- ================== 0205 Loop WordPress ================== -->
+  <?php 
+
+  if(have_posts()){ ?>
+  Bem vindo ao post
+  <?php } else{
+ ?>
+  Página não encontrada
+  <?php } ?>
+
+
+  <?php if(have_posts()) { while(have_posts()){ the_post(); ?>
+  <h1><?php the_title(); ?></h1>
+  <?php } } else{
+?>
+  Página não encontrada
+  <?php } ?>
+
 </body>
 
 </html>
