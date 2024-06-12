@@ -1,0 +1,120 @@
+.grid {
+  display: grid;
+  margin: 30px auto;
+  padding: 0 20px;
+  grid-template-columns: minmax(160px, auto) minmax(auto, 600px) minmax(300px, auto);
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px
+  }
+}
+
+.busca form {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.busca #s {
+  border: 2px solid #000;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  padding: 12px 40px 12px 20px;
+  grid-area: 1/1;
+}
+
+.busca #searchbutton {
+  grid-area: 1/1;
+  width: 50px;
+  justify-self: end;
+  border: none;
+  text-indent: -100px;
+  background: transparent url('./img/icons/search.svg') no-repeat center center;
+}
+
+.conta {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+@media (max-width: 800px) {
+  .conta {
+    grid-gap: 40px;
+    justify-content: start;
+  }
+}
+
+.conta .minha-conta,
+.conta .carrinho {
+  padding: 5px 0px 5px 34px;
+  background: url('./img/icons/cart.svg') no-repeat center left;
+  position: relative;
+}
+
+.conta .minha-conta {
+  background: url('./img/icons/user.svg') no-repeat center left;
+}
+
+.carrinho-count {
+  display: block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: orange;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.menu-categorias {
+  background-color: #000;
+  padding: 5px;
+}
+
+.menu-categorias ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-categorias ul li {
+  margin: 15px 10px;
+}
+
+.menu-categorias a {
+  color: #fff;
+  padding: 10px;
+}
+
+.menu-categorias a:hover,
+.menu-categorias .current-menu-item a {
+  color: orangered;
+}
+
+@media (max-width: 800px) {
+
+  .menu-categorias {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .menu-categorias ul {
+    justify-content: inherit;
+  }
+}

@@ -1,0 +1,282 @@
+.wp-block-woocommerce-cart a {
+  text-decoration: underline;
+}
+
+/* Notificações */
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  background: #eee;
+  border: none;
+  color: #000;
+  padding: 15px 20px;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce-error::before {
+  display: none;
+}
+
+.woocommerce-error {
+  border-left: 4px solid orange;
+}
+
+.woocommerce-message,
+.woocommerce-info {
+  border-left: 4px solid olivedrab;
+}
+
+.wc-block-components-text-input.is-active input {
+  font-size: 1.125rem !important;
+  border: 1px solid rgb(0, 0, 0, .08) !important;
+  background: rgba(0, 0, 0, .08) !important;
+  padding: 10px 15px !important;
+  border-radius: 10px 15px !important;
+}
+
+.wp-block-woocommerce-cart form .form-row {
+  padding: 10px 0;
+}
+
+button.components-button.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.contained {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+  min-height: 43px;
+}
+
+/* Carrinho */
+
+.woocommerce #wc-block-components-totals-coupon__input-0 {
+  min-width: 180px;
+  margin-right: 10px;
+}
+
+a.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #0066bb;
+}
+
+a.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained:hover {
+  background-color: #1188ee;
+}
+
+span.wp-block-woocommerce-cart-order-summary-heading-block.wc-block-cart__totals-title {
+  margin-bottom: 10px !important;
+  font-size: 1.125rem !important;
+  text-transform: uppercase !important;
+}
+
+.woocommerce table.shop_table {
+  border-radius: 0;
+}
+
+/* Checkout */
+
+.woocommerce-form-coupon-toogle {
+  display: none;
+}
+
+h2.wc-block-components-title.wc-block-components-checkout-step__title {
+  font-size: 1rem;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.wc-block-components-checkout-step__container {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.wc-block-components-radio-control-accordion-content {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+
+.wc-block-components-radio-control__secondary-label,
+.wc-block-components-radio-control-accordion-content,
+.wc-block-components-radio-control__label {
+  font-size: 1rem;
+  color: #111;
+}
+
+button.components-button.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.contained {
+  float: none;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background-color: #0066bb !important;
+}
+
+button.components-button.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.contained:hover {
+  background-color: #1188ee !important;
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+  max-width: 600px;
+}
+
+.woocommerce-Input {
+  background-color: rgb(0 0 0 / 13%);
+  border: 1px solid rgb(0 0 0 / 13%);
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+.woocommerce form .show-password-input::after,
+.woocommerce-page form .show-password-input::after {
+  top: -4px;
+  position: relative;
+}
+
+button.woocommerce-button.button.woocommerce-form-login__submit,
+button.woocommerce-Button.button {
+  background-color: #000;
+  color: #fff;
+}
+
+/* PagSeguro */
+
+.woocommerce #pagseguro-payment-form {
+  border: none;
+}
+
+.woocommerce #payment div.payment_box ::-webrit-input-placeholder {
+  color: rgba(0, 0, 0, .08);
+}
+
+/* Minha Conta */
+
+.woocommerce-account h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.woocommerce-account.logged-in .woocommerce {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .woocommerce-account.logged-in .woocommerce {
+    grid-template-columns: 1fr;
+  }
+}
+
+.woocommerce-account.logged-in .woocommerce::after,
+.woocommerce-account.logged-in .woocommerce::before {
+  display: none;
+}
+
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+.woocommerce-account.logged-in .woocommerce-MyAccount-content {
+  width: auto;
+  float: none;
+}
+
+/* Estilo Sidmenu */
+
+.woocommerce-MyAccount-navigation ul {
+  background-color: #111;
+}
+
+.woocommerce-MyAccount-navigation a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, .08);
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a {
+  background-color: orangered;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 1rem;
+}
+
+.woocommerce-MyAccount-content button {
+  margin-top: 15px !important;
+}
+
+.woocommerce-MyAccount-content input {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+button.button {
+  background-color: #111 !important;
+  color: #fff !important;
+
+}
+
+/* Pedido Recebido */
+.woocommerce-order-received h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.woocommerce-order-received .woocommerce-thankyou-order-received {
+  color: #fff;
+  background-color: #0066bb;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details {
+  background-color: #eee;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details li {
+  margin: 10px;
+}
+
+.woocommerce-order-received ul.order_details li strong {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.woocommerce-order-received ul.order_details+p {
+  margin-bottom: 30px;
+}
+
+.woocommerce-page .woocommerce-message .button {
+  font-weight: normal;
+  color: #fff;
+  background-color: #0066bb;
+}
+
+.woocommerce-page .woocommerce-message .button:hover {
+  background-color: #1188ee;
+}
+
+.woocommerce a.button.alt {
+  font-weight: normal;
+  background-color: #0066bb;
+}
+
+.woocommerce a.button.alt:hover {
+  font-weight: normal;
+  background-color: #1188ee;
+}
