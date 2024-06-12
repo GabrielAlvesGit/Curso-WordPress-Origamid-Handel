@@ -38,3 +38,6 @@ $ O arquivo dever sur colocado/subido ao WP local
 </pre>
 
 ## 💻 Layout
+
+![image](https://github.com/GabrielAlvesGit/Curso-WordPress-Origamid-Handel/assets/102634725/1f8e39cd-f784-4234-aaf9-bdb5b4ccb090)
+
