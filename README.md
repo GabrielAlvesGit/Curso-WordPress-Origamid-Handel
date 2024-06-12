@@ -28,6 +28,7 @@ Este projeto visa aprimorar minhas habilidades de desenvolvimento ao aplicar con
 
 <pre>
 $ git clone 
+  https://github.com/GabrielAlvesGit/Curso-WordPress-Origamid-Handel.git
 </pre>
 
 ### Entre no diretório do projeto
