@@ -35,7 +35,7 @@ $ git clone
 
 <pre>
 $ WP Local
-$ O arquivo dever sur colocado/subido ao WP local
+$ O arquivo dever ser colocado/up ao WP local
 </pre>
 
 ## 💻 Layout
